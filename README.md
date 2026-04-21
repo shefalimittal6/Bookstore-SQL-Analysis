@@ -1,9 +1,9 @@
 # 📚 Online Bookstore Customer & Sales Analysis (SQL)
 
 ## 📌 Project Overview
-This project focuses on analyzing customer behavior, sales performance, and inventory management for an online bookstore using SQL.
+This project analyzes customer purchasing behavior, sales performance, and inventory trends for an online bookstore using SQL.
 
-The goal is to simulate real-world e-commerce operations and extract meaningful insights from structured transactional data.
+The objective is to simulate a real-world e-commerce system and extract actionable insights that can help improve revenue, customer retention, and inventory management.
 
 
 
@@ -74,11 +74,17 @@ The project is based on a relational database with three main tables:
 ---
 
 ## 💡 Key Insights
-- A small number of books contribute significantly to overall revenue  
-- Certain genres dominate total sales volume  
-- Repeat customers generate higher order frequency  
-- Some books show low stock despite consistent demand (inventory gap)  
-- High-value customers contribute a major portion of revenue  
+- A small percentage of books contribute to a large share of total revenue  
+- Repeat customers place multiple orders, indicating higher lifetime value  
+- Certain genres consistently perform better in terms of sales volume  
+- Some books show low stock despite frequent orders, highlighting potential inventory issues  
+- High-spending customers contribute significantly to overall revenue
+
+## 📈 Business Impact
+- Helps identify high-performing books and genres to improve sales strategy  
+- Enables customer segmentation for targeted marketing  
+- Highlights inventory gaps to prevent stock shortages  
+- Supports data-driven decision making in e-commerce operations  
 
 ---
 
@@ -121,7 +127,23 @@ Customer order frequency analysis
 Identification of most frequently ordered books
 Inventory analysis (stock vs orders)
 
+## 🚀 Advanced Analysis
+
+### Monthly Revenue Trend
+SELECT DATE_TRUNC('month', order_date) AS month,
+SUM(total_amount) AS monthly_revenue
+FROM orders
+GROUP BY month
+ORDER BY month;
+
+### Top Customers by Spending 
+SELECT c.name, SUM(o.total_amount) AS total_spent
+FROM orders o
+JOIN customers c ON o.customer_id = c.customer_id
+GROUP BY c.name
+ORDER BY total_spent DESC;
 
 
 👩‍💻 Author
+
 Shefali Mittal
