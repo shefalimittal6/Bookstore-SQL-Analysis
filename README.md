@@ -100,6 +100,7 @@ Run the table creation queries provided in the project.
 
 3. Import Data
 Use the COPY command to import CSV files:
+
 COPY Books(Book_ID, Title, Author, Genre, Published_Year, Price)
 FROM 'path_to_books.csv'
 CSV HEADER;
