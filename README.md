@@ -53,6 +53,21 @@ The project is based on a relational database with three main tables:
 
 ---
 
+## 📊 Excel Dashboard
+
+An interactive Excel dashboard was created using pivot tables and charts to visualize key insights.
+
+### Features:
+- Genre-wise sales analysis
+- Top customers by revenue
+- Monthly sales trends
+
+### Tools Used:
+- Excel (Pivot Tables, Charts, VLOOKUP)
+
+--- 
+
+
 ## 🔍 Key SQL Concepts Used
 - SELECT, WHERE, ORDER BY
 - GROUP BY & Aggregations
