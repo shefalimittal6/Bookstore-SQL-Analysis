@@ -67,6 +67,25 @@ An interactive Excel dashboard was created using pivot tables and charts to visu
 
 --- 
 
+## 📊 Power BI Dashboard
+
+An interactive Power BI dashboard was created to provide advanced visual insights and a more dynamic user experience.
+
+### Features:
+- Total Revenue, Orders, and Customers KPIs
+- Revenue by Genre (Bar Chart)
+- Top Customers Analysis
+- Top 10 Best Sellers
+- Year with Most Publication
+- Interactive Filters (Slicers for Genre & Country & Year)
+
+### Tools Used:
+- Power BI (Data Modeling, DAX, Visualization)
+
+### 📷 Dashboard Preview:
+![Bookstore Sales Analysis.pbix]
+
+---
 
 ## 🔍 Key SQL Concepts Used
 - SELECT, WHERE, ORDER BY
